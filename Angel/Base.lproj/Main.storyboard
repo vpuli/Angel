@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GreatVibes-Regular.ttf">
+            <string>GreatVibes-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Angel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5st-Bq-sQY" customClass="GradientView" customModule="Angel" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.092781893908977509" green="0.28048262000083923" blue="0.69720584154129028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.015734078362584114" green="0.98599380254745483" blue="0.99320012331008911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaV-sn-Yk6" customClass="SpringView" customModule="Angel" customModuleProvider="target">
+                                <rect key="frame" x="89" y="218" width="142" height="132"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Angel2" translatesAutoresizingMaskIntoConstraints="NO" id="dt2-14-ESm" customClass="Angel2">
+                                        <rect key="frame" x="0.0" y="-2" width="142" height="136"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="136" id="YFW-G0-0Ub"/>
+                                            <constraint firstAttribute="width" constant="142" id="inm-KY-BCR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Angel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kB3-bZ-tgB">
+                                        <rect key="frame" x="-69" y="-169" width="280" height="104"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GreatVibes-Regular" family="Great Vibes" pointSize="63"/>
+                                        <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="XKv-zL-vJv"/>
+                                    <constraint firstItem="dt2-14-ESm" firstAttribute="centerY" secondItem="BaV-sn-Yk6" secondAttribute="centerY" id="ZaO-en-xuK"/>
+                                    <constraint firstItem="dt2-14-ESm" firstAttribute="centerX" secondItem="BaV-sn-Yk6" secondAttribute="centerX" id="fzn-2b-rl2"/>
+                                    <constraint firstAttribute="height" constant="132" id="lXp-Fi-aQQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="Qfw-p2-Whb" customClass="SpringImageView" customModule="Angel" customModuleProvider="target">
+                                <rect key="frame" x="140" y="240" width="214" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="Fev-qV-MBL"/>
+                                    <constraint firstAttribute="height" constant="189" id="JUz-hw-nUW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stickman" translatesAutoresizingMaskIntoConstraints="NO" id="X3X-1k-p1i" customClass="SpringImageView" customModule="Angel" customModuleProvider="target">
+                                <rect key="frame" x="85.5" y="438" width="149" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="6ol-OF-1Sb"/>
+                                    <constraint firstAttribute="height" constant="130" id="lgn-r2-0J0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="GCz-G5-XT6" customClass="SpringImageView" customModule="Angel" customModuleProvider="target">
+                                <rect key="frame" x="-30" y="240" width="214" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cx-mR-5hE" customClass="SpringButton" customModule="Angel" customModuleProvider="target">
+                                <rect key="frame" x="109" y="409" width="102" height="30"/>
+                                <state key="normal" title="Start your day!">
+                                    <color key="titleColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tdn-T9-0rp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5st-Bq-sQY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0MC-IH-0l9"/>
+                            <constraint firstItem="BaV-sn-Yk6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CBS-OL-M4h"/>
+                            <constraint firstItem="BaV-sn-Yk6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="198" id="HUc-t2-1sB"/>
+                            <constraint firstItem="X3X-1k-p1i" firstAttribute="top" secondItem="Qfw-p2-Whb" secondAttribute="bottom" constant="9" id="MLc-wo-VXR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Cx-mR-5hE" secondAttribute="bottom" constant="129" id="Rql-kF-G13"/>
+                            <constraint firstItem="9Cx-mR-5hE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cpd-P0-hvf"/>
+                            <constraint firstAttribute="trailing" secondItem="5st-Bq-sQY" secondAttribute="trailing" id="elB-DX-ukH"/>
+                            <constraint firstItem="5st-Bq-sQY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h2f-Ux-xkQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Qfw-p2-Whb" secondAttribute="trailing" constant="-34" id="hpc-hF-VmV"/>
+                            <constraint firstItem="X3X-1k-p1i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jls-Ni-Gm8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X3X-1k-p1i" secondAttribute="bottom" id="llb-hz-dRb"/>
+                            <constraint firstItem="5st-Bq-sQY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q0t-HS-5yT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5st-Bq-sQY" secondAttribute="bottom" id="rL0-UQ-85R"/>
+                            <constraint firstItem="5st-Bq-sQY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rWm-lR-kgY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftcloud" destination="Qfw-p2-Whb" id="Aih-bQ-RVJ"/>
+                        <outlet property="rightCloud" destination="GCz-G5-XT6" id="K72-6e-E1h"/>
+                        <outlet property="springBtn" destination="9Cx-mR-5hE" id="UOO-XM-MXu"/>
+                        <outlet property="springObj" destination="BaV-sn-Yk6" id="VLj-Mt-MWf"/>
+                        <outlet property="stickview" destination="X3X-1k-p1i" id="Kyu-OD-gz5"/>
+                        <segue destination="4OB-zj-I9h" kind="show" identifier="startDaySegue" id="eao-N9-wgX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="210"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Phi-vY-QL7">
+            <objects>
+                <viewController id="4OB-zj-I9h" customClass="mainViewController" customModule="Angel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Fk-Rn-TBS"/>
+                        <viewControllerLayoutGuide type="bottom" id="fZh-nQ-YOy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Vb-mh-IKY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8V-6F-zXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Angel2" width="463" height="463"/>
+        <image name="Cloud1" width="256" height="256"/>
+        <image name="Cloud2" width="256" height="256"/>
+        <image name="stickman" width="256" height="256"/>
+    </resources>
+</document>
